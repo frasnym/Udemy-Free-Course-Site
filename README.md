@@ -1,6 +1,7 @@
-# Udemy Free Course [Site](https://google.com)
+# Udemy Free Course [Site](https://udemy-free-course-site.vercel.app/)
 
 Build with NextJS & TailwindCSS
+[Site Preview](https://udemy-free-course-site.vercel.app/)
 
 ## How to
 
