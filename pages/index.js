@@ -37,18 +37,18 @@ export default function IndexPage({ courses }) {
 				</h2>
 				<div className="pt-3 text-gray-500 md:flex justify-between items-center text-right">
 					<div className="flex-grow">
-						<div class="relative flex w-full flex-wrap items-stretch">
+						<div className="relative flex w-full flex-wrap items-stretch">
 							<input
 								type="text"
 								value={search}
 								onChange={searchHandler}
 								placeholder="Search the course.."
-								class="px-3 py-2 border-2 rounded-lg border-green-400 focus:outline-none flex-grow w-full sm:w-min"
+								className="px-3 py-2 border-2 rounded-lg border-green-400 focus:outline-none flex-grow w-full sm:w-min"
 							/>
 							{search.length > 0 ? (
 								<span
 									onClick={clearSearchInput}
-									class="z-10 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 right-2 py-3 cursor-pointer"
+									className="z-10 h-full leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 right-2 py-3 cursor-pointer"
 								>
 									<XCircle />
 								</span>
