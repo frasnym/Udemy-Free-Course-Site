@@ -13,6 +13,8 @@ export default function CoursesList(props) {
 					students,
 					language,
 					caption,
+					tested,
+					valid,
 				}) => (
 					<div
 						key={url}
@@ -32,6 +34,32 @@ export default function CoursesList(props) {
 								</p>
 							</div>
 							<div className="py-3 sm:py-0 grid grid-cols-2">
+								<div className="font-bold border-b-2">
+									<span>Tested: </span>
+									<span
+										className={
+											tested === "Yes"
+												? "text-green-600"
+												: "text-red-600"
+										}
+									>
+										{tested}
+									</span>
+								</div>
+								<div className="font-bold border-b-2">
+									<span>It is FREE: </span>
+									<span
+										className={
+											valid === "Yes"
+												? "text-green-600"
+												: valid === "No"
+												? "text-red-600"
+												: "text-gray-600"
+										}
+									>
+										{valid}
+									</span>
+								</div>
 								<div>
 									<span className="font-bold">Rating: </span>
 									<span>{rating}</span>
